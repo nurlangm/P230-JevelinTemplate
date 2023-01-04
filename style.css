@@ -394,11 +394,14 @@ margin-top:40px;
   font-weight: bold;
 }
 #introductionvideo .video{
-text-align: center;
+  position: absolute;
+  margin-left: 60px;
+  left: 140px;
 }
+
 #introductionvideo .header{
   position: relative;
-  left: 14%;
+  left:205px;
 }
 #introductionvideo h2{
   font-size: 15px;
@@ -436,20 +439,23 @@ font-weight: bold;
 #introductionvideo{
   height: 140vh;
 }
-#introductionvideo i{
+#introductionvideo i{ 
   width: 65px;
   height: 65px;
   font-size: medium;
   position:absolute;
   background-color:white;
-  left: 48%;
-  top: 45%;
   justify-content: center; 
   align-items: center;
   display: flex;
   border-radius:50%;
-  color:gray;
+  color:gray; 
   transition: 0.3s;
+}
+#introductionvideo .button{
+  position: relative;
+  left: 70vh;
+  top: 30vh;
 }
 #introductionvideo i:hover{
   background-color: #7d1eff;
@@ -649,7 +655,7 @@ font-weight: bold;
 .fixed{
   height: 300px;
   width: 50px;
-  background-color:red;
+  background-color:white;
   font-size: 35px;
 }
 #button{
@@ -668,4 +674,28 @@ font-weight: bold;
 .content .text{
   position: relative;
   left:10%;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  margin-right: 20px;
+  z-index: 99999999999999999;
+  margin-bottom: 13%;
+  right: 0;
+  width: 70px;
+  border-radius: 10px;
+  height:350px;
+}
+.fixed ul li i{
+  color: #9396a5;
+  font-size:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:50px;
+  transition: 0.3s;
+}
+.fixed ul li i:hover{
+  color:rgba(0, 0, 255, 0.666);
+  cursor:pointer;
 }
